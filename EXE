@@ -10,6 +10,16 @@ local ScriptHere = Instance.new("TextBox")
 local ImageLabel = Instance.new("ImageLabel")
 local UIGradient = Instance.new("UIGradient")
 local ImageLabel_2 = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local BloxFruitGUI = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local MG = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ImageButton_3 = Instance.new("ImageButton")
+local ope = Instance.new("Frame")
+local OPEN = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
 
 --Properties:
 
@@ -18,30 +28,30 @@ EXE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 EXE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = EXE
-Frame.BackgroundColor3 = Color3.fromRGB(255, 225, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
 Frame.BackgroundTransparency = 0.500
-Frame.BorderColor3 = Color3.fromRGB(171, 148, 0)
+Frame.BorderColor3 = Color3.fromRGB(75, 0, 0)
 Frame.BorderSizePixel = 5
-Frame.Position = UDim2.new(0.145864412, 0, 0.30216226, 0)
-Frame.Size = UDim2.new(0, 275, 0, 393)
+Frame.Position = UDim2.new(0.143570825, 0, 0.189380318, 0)
+Frame.Size = UDim2.new(0, 334, 0, 483)
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 225, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(181, 0, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 275, 0, 31)
-TextLabel.Font = Enum.Font.Unknown
+TextLabel.Size = UDim2.new(0, 302, 0, 31)
+TextLabel.Font = Enum.Font.Arcade
 TextLabel.Text = "Nuker"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 15.000
 
 EXE_2.Name = "EXE"
 EXE_2.Parent = Frame
-EXE_2.BackgroundColor3 = Color3.fromRGB(255, 225, 0)
+EXE_2.BackgroundColor3 = Color3.fromRGB(181, 0, 0)
 EXE_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 EXE_2.BorderSizePixel = 0
-EXE_2.Position = UDim2.new(0.458181828, 0, 0.847328246, 0)
-EXE_2.Size = UDim2.new(0, 95, 0, 45)
+EXE_2.Position = UDim2.new(0.469709158, 0, 0.847328186, 0)
+EXE_2.Size = UDim2.new(0, 106, 0, 45)
 EXE_2.Font = Enum.Font.Unknown
 EXE_2.Text = "Execute"
 EXE_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -49,23 +59,23 @@ EXE_2.TextSize = 14.000
 
 Clear.Name = "Clear"
 Clear.Parent = Frame
-Clear.BackgroundColor3 = Color3.fromRGB(255, 225, 0)
+Clear.BackgroundColor3 = Color3.fromRGB(181, 0, 0)
 Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.043636363, 0, 0.847328246, 0)
-Clear.Size = UDim2.new(0, 104, 0, 45)
-Clear.Font = Enum.Font.Roboto
+Clear.Position = UDim2.new(0.0436364375, 0, 0.847328186, 0)
+Clear.Size = UDim2.new(0, 125, 0, 45)
+Clear.Font = Enum.Font.Arcade
 Clear.Text = "Clear"
 Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clear.TextSize = 14.000
 
 SH.Name = "SH"
 SH.Parent = Frame
-SH.BackgroundColor3 = Color3.fromRGB(255, 225, 0)
+SH.BackgroundColor3 = Color3.fromRGB(181, 0, 0)
 SH.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SH.BorderSizePixel = 0
-SH.Position = UDim2.new(0.829090893, 0, 0.0788804069, 0)
-SH.Size = UDim2.new(0, 47, 0, 362)
+SH.Position = UDim2.new(0.863673151, 0, 0, 0)
+SH.Size = UDim2.new(0, 47, 0, 483)
 
 ImageButton.Parent = SH
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -81,32 +91,32 @@ ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton_2.BackgroundTransparency = 1.000
 ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton_2.BorderSizePixel = 0
-ImageButton_2.Position = UDim2.new(0.0851063803, 0, 0.754143655, 0)
-ImageButton_2.Size = UDim2.new(0, 38, 0, 35)
-ImageButton_2.Image = "rbxassetid://1100390363"
+ImageButton_2.Position = UDim2.new(0.106382981, 0, 0.735510051, 0)
+ImageButton_2.Size = UDim2.new(0, 42, 0, 44)
+ImageButton_2.Image = "rbxassetid://11746483499"
 
 ScriptHere.Name = "ScriptHere"
 ScriptHere.Parent = Frame
-ScriptHere.BackgroundColor3 = Color3.fromRGB(255, 225, 0)
+ScriptHere.BackgroundColor3 = Color3.fromRGB(181, 0, 0)
 ScriptHere.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptHere.BorderSizePixel = 0
-ScriptHere.Position = UDim2.new(0.043636363, 0, 0.0992366448, 0)
-ScriptHere.Size = UDim2.new(0, 208, 0, 286)
-ScriptHere.Font = Enum.Font.SourceSans
+ScriptHere.Position = UDim2.new(0.0436363555, 0, 0.0992366225, 0)
+ScriptHere.Size = UDim2.new(0, 254, 0, 343)
+ScriptHere.Font = Enum.Font.Merriweather
 ScriptHere.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptHere.PlaceholderText = "By Steve_9092 And EggenGoldenMen"
 ScriptHere.Text = ""
 ScriptHere.TextColor3 = Color3.fromRGB(0, 0, 0)
-ScriptHere.TextSize = 14.000
+ScriptHere.TextSize = 11.000
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.214545459, 0, -0.0407124683, 0)
-ImageLabel.Size = UDim2.new(0, 67, 0, 63)
-ImageLabel.Image = "rbxassetid://18500000600"
+ImageLabel.Position = UDim2.new(0.215554968, 0, -0.0213914327, 0)
+ImageLabel.Size = UDim2.new(0, 51, 0, 51)
+ImageLabel.Image = "rbxassetid://11308285175"
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 194, 10)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(255, 231, 47)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 230, 138)), ColorSequenceKeypoint.new(0.68, Color3.fromRGB(229, 210, 3)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Parent = Frame
@@ -116,21 +126,99 @@ ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_2.BackgroundTransparency = 1.000
 ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(0.552727282, 0, -0.0178117044, 0)
-ImageLabel_2.Size = UDim2.new(0, 43, 0, 46)
-ImageLabel_2.Image = "http://www.roblox.com/asset/?id=18500216541"
+ImageLabel_2.Position = UDim2.new(0.0752490386, 0, -0.133192673, 0)
+ImageLabel_2.Rotation = -90.000
+ImageLabel_2.Size = UDim2.new(0, 47, 0, 48)
+ImageLabel_2.Image = "rbxassetid://9589741025"
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
+ScrollingFrame.BackgroundTransparency = 0.500
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 5
+ScrollingFrame.Position = UDim2.new(1.25748503, 0, -0.035196688, 0)
+ScrollingFrame.Size = UDim2.new(0, 279, 0, 483)
+ScrollingFrame.Visible = false
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 263, 0, 31)
+TextLabel_2.Font = Enum.Font.Arcade
+TextLabel_2.Text = "Script CLOUD"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+BloxFruitGUI.Name = "BloxFruitGUI"
+BloxFruitGUI.Parent = ScrollingFrame
+BloxFruitGUI.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
+BloxFruitGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BloxFruitGUI.BorderSizePixel = 0
+BloxFruitGUI.Position = UDim2.new(0.0358422957, 0, 0.0496894419, 0)
+BloxFruitGUI.Size = UDim2.new(0, 143, 0, 50)
+BloxFruitGUI.Font = Enum.Font.Arcade
+BloxFruitGUI.Text = "Blox Fruit GUI"
+BloxFruitGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+BloxFruitGUI.TextSize = 14.000
+
+UICorner.Parent = BloxFruitGUI
+
+MG.Name = "MG"
+MG.Parent = ScrollingFrame
+MG.BackgroundColor3 = Color3.fromRGB(189, 0, 0)
+MG.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MG.BorderSizePixel = 0
+MG.Position = UDim2.new(0.0358422957, 0, 0.118012421, 0)
+MG.Size = UDim2.new(0, 143, 0, 50)
+MG.Font = Enum.Font.Arcade
+MG.Text = "Muscle Legends GUI"
+MG.TextColor3 = Color3.fromRGB(0, 0, 0)
+MG.TextSize = 14.000
+
+UICorner_2.Parent = MG
+
+ImageButton_3.Parent = Frame
+ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_3.BackgroundTransparency = 1.000
+ImageButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_3.BorderSizePixel = 0
+ImageButton_3.Position = UDim2.new(0.868262827, 0, 0.612694144, 0)
+ImageButton_3.Size = UDim2.new(0, 45, 0, 48)
+ImageButton_3.Image = "http://www.roblox.com/asset/?id=18507487330"
+
+ope.Name = "ope"
+ope.Parent = EXE
+ope.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ope.BackgroundTransparency = 1.000
+ope.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ope.BorderSizePixel = 0
+ope.Position = UDim2.new(0.0290519875, 0, 0.84837091, 0)
+ope.Size = UDim2.new(0, 100, 0, 100)
+
+OPEN.Name = "OPEN"
+OPEN.Parent = ope
+OPEN.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+OPEN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OPEN.BorderSizePixel = 0
+OPEN.Position = UDim2.new(0.233233646, 0, 0.227763668, 0)
+OPEN.Size = UDim2.new(0, 52, 0, 52)
+OPEN.Image = "rbxassetid://11308285175"
+
+UICorner_3.Parent = OPEN
 
 -- Scripts:
 
-local function WAUF_fake_script() -- EXE_2.ExecuteScript 
+local function UVUMMFI_fake_script() -- EXE_2.ExecuteScript 
 	local script = Instance.new('LocalScript', EXE_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.ScriptHere.Text)()
 	end)
 end
-coroutine.wrap(WAUF_fake_script)()
-local function XROHBB_fake_script() -- Clear.ClearTextScript 
+coroutine.wrap(UVUMMFI_fake_script)()
+local function PZDE_fake_script() -- Clear.ClearTextScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local button = script.Parent
@@ -145,16 +233,16 @@ local function XROHBB_fake_script() -- Clear.ClearTextScript
 	    warn("TextBox 'ScriptHere' not found or is not a TextBox instance.")
 	end
 end
-coroutine.wrap(XROHBB_fake_script)()
-local function IEUJST_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(PZDE_fake_script)()
+local function QKQPPT_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TheSuperFox/FE-Roblox-Script-HUB/main/FE%20Roblox%20Script%20HUB"))();
 	end)
 end
-coroutine.wrap(IEUJST_fake_script)()
-local function RFDE_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(QKQPPT_fake_script)()
+local function TQCRKN_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1354,8 +1442,8 @@ local function RFDE_fake_script() -- ImageButton_2.LocalScript
 		LoadAllAnimations()
 	end)
 end
-coroutine.wrap(RFDE_fake_script)()
-local function VCWFGRO_fake_script() -- Frame.LocalScript 
+coroutine.wrap(TQCRKN_fake_script)()
+local function XYUGAKW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -1363,4 +1451,42 @@ local function VCWFGRO_fake_script() -- Frame.LocalScript
 	Frame.Active = true 
 	Frame.Draggable = true
 end
-coroutine.wrap(VCWFGRO_fake_script)()
+coroutine.wrap(XYUGAKW_fake_script)()
+local function FWELEJ_fake_script() -- BloxFruitGUI.LocalScript 
+	local script = Instance.new('LocalScript', BloxFruitGUI)
+
+	
+end
+coroutine.wrap(FWELEJ_fake_script)()
+local function AGTDM_fake_script() -- MG.LocalScript 
+	local script = Instance.new('LocalScript', MG)
+
+	s
+end
+coroutine.wrap(AGTDM_fake_script)()
+local function CRBQ_fake_script() -- EXE.LocalScript 
+	local script = Instance.new('LocalScript', EXE)
+
+	local SGui = script.Parent
+	local Frame = SGui.Frame:WaitForChild("ScrollingFrame")
+	local Button = SGui.Frame:WaitForChild("ImageButton")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+end
+coroutine.wrap(CRBQ_fake_script)()
+local function TQWMA_fake_script() -- EXE.LocalScript 
+	local script = Instance.new('LocalScript', EXE)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame")
+	local Button = SGui.ope:WaitForChild("OPEN")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+end
+coroutine.wrap(TQWMA_fake_script)()
