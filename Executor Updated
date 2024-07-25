@@ -1,226 +1,317 @@
--- Gui to Lua
--- Version: 3.2
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
--- Instances:
+-- Instances: 38 | Scripts: 6 | Modules: 0
+local G2L = {};
 
-local Frame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
-local UICorner = Instance.new("UICorner")
-local EXE = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local Clear = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local Border = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local ScriptHere = Instance.new("TextBox")
-local UIGradient = Instance.new("UIGradient")
-local UIGradient_2 = Instance.new("UIGradient")
-local Frame_2 = Instance.new("Frame")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local Frame_3 = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local UICorner_5 = Instance.new("UICorner")
-local SH = Instance.new("ScrollingFrame")
-local BlackHoleHUB = Instance.new("TextButton")
-local KrystalDance = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local UICorner_7 = Instance.new("UICorner")
+-- StarterGui.Executer
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Executer]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
---Properties:
+-- StarterGui.Executer.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 5;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(5, 126, 182);
+G2L["2"]["Size"] = UDim2.new(0, 699, 0, 432);
+G2L["2"]["Position"] = UDim2.new(0.12675, 0, 0.17697, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(3, 70, 99);
+G2L["2"]["LayoutOrder"] = 1;
 
-Frame.Parent = game.StarterGui.Executer
-Frame.BackgroundColor3 = Color3.fromRGB(4, 125, 181)
-Frame.BorderColor3 = Color3.fromRGB(2, 69, 98)
-Frame.BorderSizePixel = 5
-Frame.LayoutOrder = 1
-Frame.Position = UDim2.new(0.126751259, 0, 0.176973403, 0)
-Frame.Size = UDim2.new(0, 699, 0, 432)
+-- StarterGui.Executer.Frame.TextLabel
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(5, 152, 210);
+G2L["3"]["TextSize"] = 20;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0, 699, 0, 20);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[RO&BLUE]];
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(4, 151, 209)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 699, 0, 20)
-TextLabel.Font = Enum.Font.PermanentMarker
-TextLabel.Text = "RO&BLUE"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 20.000
+-- StarterGui.Executer.Frame.TextLabel.ImageLabel
+G2L["4"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Image"] = [[http://www.roblox.com/asset/?id=18515757533]];
+G2L["4"]["Size"] = UDim2.new(0, 37, 0, 35);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Position"] = UDim2.new(0.36951, 0, -0.42618, 0);
 
-ImageLabel.Parent = TextLabel
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.369505703, 0, -0.426184416, 0)
-ImageLabel.Size = UDim2.new(0, 37, 0, 35)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=18515757533"
+-- StarterGui.Executer.Frame.TextLabel.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["3"]);
 
-UICorner.Parent = TextLabel
 
-EXE.Name = "EXE"
-EXE.Parent = Frame
-EXE.BackgroundColor3 = Color3.fromRGB(2, 69, 98)
-EXE.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EXE.BorderSizePixel = 0
-EXE.Position = UDim2.new(0.396189243, 0, 0.772028506, 0)
-EXE.Size = UDim2.new(0, 197, 0, 30)
-EXE.Font = Enum.Font.Arcade
-EXE.Text = "Execute"
-EXE.TextColor3 = Color3.fromRGB(255, 255, 255)
-EXE.TextSize = 14.000
+-- StarterGui.Executer.Frame.EXE
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(3, 70, 99);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 197, 0, 30);
+G2L["6"]["Name"] = [[EXE]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Execute]];
+G2L["6"]["Position"] = UDim2.new(0.39619, 0, 0.77203, 0);
 
-UICorner_2.Parent = EXE
+-- StarterGui.Executer.Frame.EXE.ExecuteScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+G2L["7"]["Name"] = [[ExecuteScript]];
 
-Clear.Name = "Clear"
-Clear.Parent = Frame
-Clear.BackgroundColor3 = Color3.fromRGB(2, 69, 98)
-Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.0371048339, 0, 0.772028506, 0)
-Clear.Size = UDim2.new(0, 231, 0, 30)
-Clear.Font = Enum.Font.Arcade
-Clear.Text = "Clear"
-Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
-Clear.TextSize = 14.000
+-- StarterGui.Executer.Frame.EXE.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["6"]);
 
-UICorner_3.Parent = Clear
 
-Border.Name = "Border"
-Border.Parent = Frame
-Border.BackgroundColor3 = Color3.fromRGB(4, 151, 209)
-Border.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Border.BorderSizePixel = 0
-Border.Position = UDim2.new(0.961876333, 0, 0, 0)
-Border.Size = UDim2.new(0, 26, 0, 433)
+-- StarterGui.Executer.Frame.Clear
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(3, 70, 99);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0, 231, 0, 30);
+G2L["9"]["Name"] = [[Clear]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Clear]];
+G2L["9"]["Position"] = UDim2.new(0.0371, 0, 0.77203, 0);
 
-UICorner_4.Parent = Border
+-- StarterGui.Executer.Frame.Clear.ClearTextScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+G2L["a"]["Name"] = [[ClearTextScript]];
 
-ScriptHere.Name = "ScriptHere"
-ScriptHere.Parent = Frame
-ScriptHere.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-ScriptHere.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptHere.BorderSizePixel = 0
-ScriptHere.Position = UDim2.new(0.0398306362, 0, 0.0830554292, 0)
-ScriptHere.Size = UDim2.new(0, 448, 0, 280)
-ScriptHere.Font = Enum.Font.Ubuntu
-ScriptHere.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-ScriptHere.PlaceholderText = "By Steve_9092 And EggenGoldenMen"
-ScriptHere.Text = ""
-ScriptHere.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScriptHere.TextSize = 11.000
-ScriptHere.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+-- StarterGui.Executer.Frame.Clear.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["9"]);
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.67, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient.Parent = ScriptHere
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(2, 221, 255)), ColorSequenceKeypoint.new(0.32, Color3.fromRGB(48, 136, 149)), ColorSequenceKeypoint.new(0.58, Color3.fromRGB(46, 177, 189)), ColorSequenceKeypoint.new(0.82, Color3.fromRGB(2, 133, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_2.Parent = Frame
+-- StarterGui.Executer.Frame.Border
+G2L["c"] = Instance.new("Frame", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(5, 152, 210);
+G2L["c"]["Size"] = UDim2.new(0, 26, 0, 433);
+G2L["c"]["Position"] = UDim2.new(0.96188, 0, 0, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[Border]];
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BackgroundTransparency = 1.000
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Size = UDim2.new(0, 369, 0, 544)
-Frame_2.ZIndex = 0
+-- StarterGui.Executer.Frame.Border.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
 
-ImageLabel_2.Parent = Frame
-ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel_2.BackgroundTransparency = 1.000
-ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(-0.0356123969, 0, -0.0635447353, 0)
-ImageLabel_2.Size = UDim2.new(0, 745, 0, 557)
-ImageLabel_2.ZIndex = 0
-ImageLabel_2.Image = "rbxassetid://14011120926"
 
-Frame_3.Parent = Frame
-Frame_3.BackgroundColor3 = Color3.fromRGB(6, 139, 255)
-Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0.0372579917, 0, 0.866114438, 0)
-Frame_3.Size = UDim2.new(0, 449, 0, 53)
+-- StarterGui.Executer.Frame.ScriptHere
+G2L["e"] = Instance.new("TextBox", G2L["2"]);
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["TextSize"] = 11;
+G2L["e"]["Name"] = [[ScriptHere]];
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["PlaceholderText"] = [[By Steve_9092 And EggenGoldenMen]];
+G2L["e"]["Size"] = UDim2.new(0, 448, 0, 280);
+G2L["e"]["Position"] = UDim2.new(0.03983, 0, 0.08306, 0);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[]];
 
-TextLabel_2.Parent = Frame_3
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(6, 139, 255)
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.00198874017, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 447, 0, 40)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "https://www.youtube.com/@EggenGoldenMen/videos"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
+-- StarterGui.Executer.Frame.ScriptHere.UIGradient
+G2L["f"] = Instance.new("UIGradient", G2L["e"]);
+G2L["f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.277, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.675, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
-TextLabel_3.Parent = Frame_3
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(6, 139, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.0538311377, 0, 0.365078896, 0)
-TextLabel_3.Size = UDim2.new(0, 399, 0, 40)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Youtube of my Friend "
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 14.000
+-- StarterGui.Executer.Frame.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["2"]);
 
-UICorner_5.Parent = Frame_3
 
-SH.Name = "SH"
-SH.Parent = Frame
-SH.Active = true
-SH.BackgroundColor3 = Color3.fromRGB(3, 43, 85)
-SH.BackgroundTransparency = 0.500
-SH.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SH.BorderSizePixel = 0
-SH.Position = UDim2.new(0.732542992, 0, 0.0462962948, 0)
-SH.Size = UDim2.new(0, 160, 0, 413)
+-- StarterGui.Executer.Frame.UIGradient
+G2L["11"] = Instance.new("UIGradient", G2L["2"]);
+G2L["11"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(3, 222, 255)),ColorSequenceKeypoint.new(0.322, Color3.fromRGB(49, 137, 150)),ColorSequenceKeypoint.new(0.580, Color3.fromRGB(47, 178, 190)),ColorSequenceKeypoint.new(0.817, Color3.fromRGB(3, 134, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
-BlackHoleHUB.Name = "BlackHoleHUB"
-BlackHoleHUB.Parent = SH
-BlackHoleHUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BlackHoleHUB.BackgroundTransparency = 1.000
-BlackHoleHUB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-BlackHoleHUB.BorderSizePixel = 0
-BlackHoleHUB.Position = UDim2.new(0.100000001, 0, 0.0191223659, 0)
-BlackHoleHUB.Size = UDim2.new(0, 128, 0, 25)
-BlackHoleHUB.Font = Enum.Font.SourceSansBold
-BlackHoleHUB.Text = "BlackHoleHub.lua"
-BlackHoleHUB.TextColor3 = Color3.fromRGB(255, 255, 255)
-BlackHoleHUB.TextSize = 14.000
+-- StarterGui.Executer.Frame.Frame
+G2L["12"] = Instance.new("Frame", G2L["2"]);
+G2L["12"]["ZIndex"] = 0;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Size"] = UDim2.new(0, 369, 0, 544);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundTransparency"] = 1;
 
-KrystalDance.Name = "KrystalDance"
-KrystalDance.Parent = SH
-KrystalDance.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KrystalDance.BackgroundTransparency = 1.000
-KrystalDance.BorderColor3 = Color3.fromRGB(0, 0, 0)
-KrystalDance.BorderSizePixel = 0
-KrystalDance.Position = UDim2.new(0.100000001, 0, 0.0658128187, 0)
-KrystalDance.Size = UDim2.new(0, 128, 0, 25)
-KrystalDance.Font = Enum.Font.SourceSansBold
-KrystalDance.Text = "FEKrystalDance.lua"
-KrystalDance.TextColor3 = Color3.fromRGB(255, 255, 255)
-KrystalDance.TextSize = 14.000
+-- StarterGui.Executer.Frame.ImageLabel
+G2L["13"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["13"]["ZIndex"] = 0;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Image"] = [[rbxassetid://14011120926]];
+G2L["13"]["Size"] = UDim2.new(0, 745, 0, 557);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Position"] = UDim2.new(-0.03561, 0, -0.06354, 0);
 
-UICorner_6.Parent = SH
+-- StarterGui.Executer.Frame.Frame
+G2L["14"] = Instance.new("Frame", G2L["2"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(7, 140, 255);
+G2L["14"]["Size"] = UDim2.new(0, 449, 0, 53);
+G2L["14"]["Position"] = UDim2.new(0.03726, 0, 0.86611, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
-UICorner_7.Parent = Frame
+-- StarterGui.Executer.Frame.Frame.TextLabel
+G2L["15"] = Instance.new("TextLabel", G2L["14"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(7, 140, 255);
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0, 447, 0, 40);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[https://www.youtube.com/@EggenGoldenMen/videos]];
+G2L["15"]["Position"] = UDim2.new(0.00199, 0, 0, 0);
 
--- Scripts:
+-- StarterGui.Executer.Frame.Frame.TextLabel
+G2L["16"] = Instance.new("TextLabel", G2L["14"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(7, 140, 255);
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 399, 0, 40);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Youtube of my Friend ]];
+G2L["16"]["Position"] = UDim2.new(0.05383, 0, 0.36508, 0);
 
-local function RFYEPNJ_fake_script() -- EXE.ExecuteScript 
-	local script = Instance.new('LocalScript', EXE)
+-- StarterGui.Executer.Frame.Frame.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["14"]);
 
+
+-- StarterGui.Executer.Frame.SH
+G2L["18"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["18"]["Active"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(4, 44, 86);
+G2L["18"]["Name"] = [[SH]];
+G2L["18"]["Size"] = UDim2.new(0, 160, 0, 413);
+G2L["18"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Position"] = UDim2.new(0.73254, 0, 0.0463, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Executer.Frame.SH.BlackHoleHUB
+G2L["19"] = Instance.new("TextButton", G2L["18"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 128, 0, 25);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Name"] = [[BlackHoleHUB]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[BlackHoleHub.lua]];
+G2L["19"]["Position"] = UDim2.new(0.1, 0, 0.01912, 0);
+
+-- StarterGui.Executer.Frame.SH.BlackHoleHUB.LocalScript
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+
+
+-- StarterGui.Executer.Frame.SH.KrystalDance
+G2L["1b"] = Instance.new("TextButton", G2L["18"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 128, 0, 25);
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Name"] = [[KrystalDance]];
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[FEKrystalDance.lua]];
+G2L["1b"]["Position"] = UDim2.new(0.1, 0, 0.06581, 0);
+
+-- StarterGui.Executer.Frame.SH.KrystalDance.LocalScript
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+-- StarterGui.Executer.Frame.SH.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["18"]);
+
+
+-- StarterGui.Executer.Frame.UICorner
+G2L["1e"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.Executer.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1"]);
+
+
+-- StarterGui.Executer.ope
+G2L["20"] = Instance.new("Frame", G2L["1"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["20"]["Position"] = UDim2.new(0, 0, 0.87469, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Name"] = [[ope]];
+G2L["20"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Executer.ope.OPEN
+G2L["21"] = Instance.new("ImageButton", G2L["20"]);
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["21"]["Image"] = [[http://www.roblox.com/asset/?id=18515757533]];
+G2L["21"]["Size"] = UDim2.new(0, 54, 0, 56);
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Name"] = [[OPEN]];
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Position"] = UDim2.new(0.65323, 0, -0.02224, 0);
+
+-- StarterGui.Executer.ope.OPEN.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
+
+
+-- StarterGui.Executer.ImageLabel
+G2L["23"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["Image"] = [[http://www.roblox.com/asset/?id=18648071441]];
+G2L["23"]["Size"] = UDim2.new(0, 54, 0, 51);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Position"] = UDim2.new(0.44753, 0, 0.64305, 0);
+
+-- StarterGui.Executer.ImageLabel.UICorner
+G2L["24"] = Instance.new("UICorner", G2L["23"]);
+
+
+-- StarterGui.Executer.ImageLabel
+G2L["25"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["Image"] = [[http://www.roblox.com/asset/?id=18648084454]];
+G2L["25"]["Size"] = UDim2.new(0, 29, 0, 28);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Rotation"] = 4;
+G2L["25"]["Position"] = UDim2.new(0.27853, 0, 0.17108, 0);
+
+-- StarterGui.Executer.ImageLabel.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+
+
+-- StarterGui.Executer.Frame.EXE.ExecuteScript
+local function C_7()
+local script = G2L["7"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.ScriptHere.Text)()
 	end)
-end
-coroutine.wrap(RFYEPNJ_fake_script)()
-local function KUVST_fake_script() -- Clear.ClearTextScript 
-	local script = Instance.new('LocalScript', Clear)
-
+end;
+task.spawn(C_7);
+-- StarterGui.Executer.Frame.Clear.ClearTextScript
+local function C_a()
+local script = G2L["a"];
 	local button = script.Parent
 	local screenGui = button.Parent.Parent
 	local textBox = screenGui.Frame:FindFirstChild("ScriptHere")
@@ -232,28 +323,28 @@ local function KUVST_fake_script() -- Clear.ClearTextScript
 	else
 	    warn("TextBox 'ScriptHere' not found or is not a TextBox instance.")
 	end
-end
-coroutine.wrap(KUVST_fake_script)()
-local function IAFG_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
+end;
+task.spawn(C_a);
+-- StarterGui.Executer.Frame.LocalScript
+local function C_10()
+local script = G2L["10"];
 	local Frame = script.Parent
 	
 	Frame.Active = true 
 	Frame.Draggable = true
-end
-coroutine.wrap(IAFG_fake_script)()
-local function UXCQKUE_fake_script() -- BlackHoleHUB.LocalScript 
-	local script = Instance.new('LocalScript', BlackHoleHUB)
-
+end;
+task.spawn(C_10);
+-- StarterGui.Executer.Frame.SH.BlackHoleHUB.LocalScript
+local function C_1a()
+local script = G2L["1a"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/TheSuperFox/FE-Roblox-Script-HUB/main/FE%20Roblox%20Script%20HUB"))();
 	end)
-end
-coroutine.wrap(UXCQKUE_fake_script)()
-local function MZOP_fake_script() -- KrystalDance.LocalScript 
-	local script = Instance.new('LocalScript', KrystalDance)
-
+end;
+task.spawn(C_1a);
+-- StarterGui.Executer.Frame.SH.KrystalDance.LocalScript
+local function C_1c()
+local script = G2L["1c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Created by Nebula_Zorua --
 		-- Sans Curse (A Curse of Light) --
@@ -1450,5 +1541,20 @@ local function MZOP_fake_script() -- KrystalDance.LocalScript
 	
 		LoadAllAnimations()
 	end)
-end
-coroutine.wrap(MZOP_fake_script)()
+end;
+task.spawn(C_1c);
+-- StarterGui.Executer.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame")
+	local Button = SGui.ope:WaitForChild("OPEN")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+end;
+task.spawn(C_1f);
+
+return G2L["1"], require;
