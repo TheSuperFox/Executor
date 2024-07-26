@@ -1,8 +1,19 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
 -- Instances: 52 | Scripts: 11 | Modules: 0
 local G2L = {};
 
 -- StarterGui.Executer
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[Executer]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -51,7 +62,6 @@ G2L["6"]["Name"] = [[ClearTextScript]];
 
 -- StarterGui.Executer.Frame.ScriptHere
 G2L["7"] = Instance.new("TextBox", G2L["2"]);
-G2L["7"]["CursorPosition"] = -1;
 G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["PlaceholderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["BorderSizePixel"] = 0;
@@ -278,8 +288,8 @@ G2L["21"] = Instance.new("LocalScript", G2L["12"]);
 G2L["22"] = Instance.new("Frame", G2L["2"]);
 G2L["22"]["BorderSizePixel"] = 0;
 G2L["22"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["22"]["Size"] = UDim2.new(0, 157, 0, 472);
-G2L["22"]["Position"] = UDim2.new(0.73887, 0, 0, 0);
+G2L["22"]["Size"] = UDim2.new(0, 175, 0, 472);
+G2L["22"]["Position"] = UDim2.new(0.70902, 0, 0, 0);
 G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 -- StarterGui.Executer.Frame.Frame.KD
@@ -289,7 +299,7 @@ G2L["23"]["TextSize"] = 14;
 G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["Size"] = UDim2.new(0, 127, 0, 29);
+G2L["23"]["Size"] = UDim2.new(0, 148, 0, 29);
 G2L["23"]["Name"] = [[KD]];
 G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["23"]["Text"] = [[FE Krystal Dance]];
@@ -306,7 +316,7 @@ G2L["25"]["TextSize"] = 14;
 G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["Size"] = UDim2.new(0, 127, 0, 29);
+G2L["25"]["Size"] = UDim2.new(0, 148, 0, 29);
 G2L["25"]["Name"] = [[FEGALE]];
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["25"]["Text"] = [[FE gale fighter]];
@@ -323,7 +333,7 @@ G2L["27"]["TextSize"] = 14;
 G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["Size"] = UDim2.new(0, 127, 0, 29);
+G2L["27"]["Size"] = UDim2.new(0, 148, 0, 29);
 G2L["27"]["Name"] = [[SAD]];
 G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["27"]["Text"] = [[FE Sad Boy]];
@@ -340,7 +350,7 @@ G2L["29"]["TextSize"] = 14;
 G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29"]["Size"] = UDim2.new(0, 127, 0, 29);
+G2L["29"]["Size"] = UDim2.new(0, 148, 0, 29);
 G2L["29"]["Name"] = [[CHILL]];
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["29"]["Text"] = [[FE chill script]];
@@ -357,7 +367,7 @@ G2L["2b"]["TextSize"] = 14;
 G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b"]["Size"] = UDim2.new(0, 127, 0, 29);
+G2L["2b"]["Size"] = UDim2.new(0, 148, 0, 29);
 G2L["2b"]["Name"] = [[TROLL]];
 G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2b"]["Text"] = [[FE Troll Gui]];
@@ -480,7 +490,7 @@ task.spawn(C_21);
 -- StarterGui.Executer.Frame.Frame.KD.LocalScript
 local function C_24()
 local script = G2L["24"];
-	script.Parent.MouseButton1Click(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		local fake_transparency = 1
 	
 	
@@ -1669,7 +1679,7 @@ task.spawn(C_24);
 -- StarterGui.Executer.Frame.Frame.FEGALE.LocalScript
 local function C_26()
 local script = G2L["26"];
-	script.Parent.MouseButton1Click(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		--[[
 	made by sammyc and loadlua
 	gale fighter by makhail07
@@ -5359,7 +5369,7 @@ task.spawn(C_26);
 -- StarterGui.Executer.Frame.Frame.SAD.LocalScript
 local function C_28()
 	local script = G2L["28"];
-	script.Parent.MouseButton1Click(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		local clone_transparency = 1 --Set Value How you want to fake body be transparenty.
 
 		local Motors = {
@@ -6645,7 +6655,7 @@ task.spawn(C_28);
 -- StarterGui.Executer.Frame.Frame.CHILL.LocalScript
 local function C_2a()
 	local script = G2L["2a"];
-	script.Parent.MouseButton1Click(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		-- SCRIPT NOT BY SPACE NOOB im just showcase scripts...
 		-- IDK What creator of the script
 		-- FE Honored
@@ -7626,7 +7636,7 @@ task.spawn(C_2a);
 -- StarterGui.Executer.Frame.Frame.TROLL.LocalScript
 local function C_2c()
 	local script = G2L["2c"];
-	script.Parent.MouseButton1Click(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		getgenv().ActivateTheUltimateTrolly = true
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Orealated/Oreal/main/orealated%20Easy.gg%20UTH%20Loader", true))();
 	end)
