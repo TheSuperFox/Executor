@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 54 | Scripts: 12 | Modules: 0
+-- Instances: 47 | Scripts: 13 | Modules: 0
 local G2L = {};
 
 -- StarterGui.Executer
@@ -17,497 +17,352 @@ G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[Executer]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
--- StarterGui.Executer.Frame
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 5;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
-G2L["2"]["Size"] = UDim2.new(0, 603, 0, 470);
-G2L["2"]["Position"] = UDim2.new(0.12675, 0, 0.12929, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["2"]["LayoutOrder"] = 1;
-
--- StarterGui.Executer.Frame.EXE
-G2L["3"] = Instance.new("TextButton", G2L["2"]);
-G2L["3"]["BorderSizePixel"] = 0;
-G2L["3"]["TextSize"] = 14;
-G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3"]["Size"] = UDim2.new(0, 188, 0, 30);
-G2L["3"]["Name"] = [[EXE]];
-G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3"]["Text"] = [[Execute]];
-G2L["3"]["Position"] = UDim2.new(0.35385, 0, 0.69969, 0);
-
--- StarterGui.Executer.Frame.EXE.ExecuteScript
-G2L["4"] = Instance.new("LocalScript", G2L["3"]);
-G2L["4"]["Name"] = [[ExecuteScript]];
-
--- StarterGui.Executer.Frame.Clear
-G2L["5"] = Instance.new("TextButton", G2L["2"]);
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["TextSize"] = 14;
-G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5"]["Size"] = UDim2.new(0, 200, 0, 30);
-G2L["5"]["Name"] = [[Clear]];
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Text"] = [[Clear]];
-G2L["5"]["Position"] = UDim2.new(0.02052, 0, 0.69969, 0);
-
--- StarterGui.Executer.Frame.Clear.ClearTextScript
-G2L["6"] = Instance.new("LocalScript", G2L["5"]);
-G2L["6"]["Name"] = [[ClearTextScript]];
-
--- StarterGui.Executer.Frame.ScriptHere
-G2L["7"] = Instance.new("TextBox", G2L["2"]);
-G2L["7"]["CursorPosition"] = -1;
-G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["PlaceholderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["TextSize"] = 16;
-G2L["7"]["Name"] = [[ScriptHere]];
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7"]["PlaceholderText"] = [[By Steve_9092 And EggenGoldenMen]];
-G2L["7"]["Size"] = UDim2.new(0, 388, 0, 291);
-G2L["7"]["Position"] = UDim2.new(0.02218, 0, 0.07454, 0);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[]];
-
--- StarterGui.Executer.Frame.ScriptHere.UIGradient
-G2L["8"] = Instance.new("UIGradient", G2L["7"]);
-G2L["8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.277, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.675, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.Executer.Frame.LocalScript
-G2L["9"] = Instance.new("LocalScript", G2L["2"]);
-
-
--- StarterGui.Executer.Frame.Frame
-G2L["a"] = Instance.new("Frame", G2L["2"]);
-G2L["a"]["ZIndex"] = 0;
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["Size"] = UDim2.new(0, 369, 0, 544);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["BackgroundTransparency"] = 1;
-
--- StarterGui.Executer.Frame.Frame
-G2L["b"] = Instance.new("Frame", G2L["2"]);
-G2L["b"]["BorderSizePixel"] = 5;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
-G2L["b"]["Size"] = UDim2.new(0, 603, 0, 27);
-G2L["b"]["Position"] = UDim2.new(0, 0, -0.06649, 0);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(39, 39, 39);
-
--- StarterGui.Executer.Frame.Frame.ImageLabel
-G2L["c"] = Instance.new("ImageLabel", G2L["b"]);
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["Image"] = [[rbxassetid://11163007697]];
-G2L["c"]["Size"] = UDim2.new(0, 31, 0, 31);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["BackgroundTransparency"] = 1;
-G2L["c"]["Position"] = UDim2.new(0, 0, -0.03226, 0);
-
--- StarterGui.Executer.Frame.Frame.TextLabel
-G2L["d"] = Instance.new("TextLabel", G2L["b"]);
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["BackgroundTransparency"] = 1;
-G2L["d"]["Size"] = UDim2.new(0, 54, 0, 27);
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[BlackEye]];
-G2L["d"]["Position"] = UDim2.new(0.05072, 0, 0.06929, 0);
-
--- StarterGui.Executer.Frame.Tab
-G2L["e"] = Instance.new("Frame", G2L["2"]);
-G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
-G2L["e"]["Size"] = UDim2.new(0, 62, 0, 25);
-G2L["e"]["Position"] = UDim2.new(0.02124, 0, 0.02085, 0);
-G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Name"] = [[Tab]];
-
--- StarterGui.Executer.Frame.Tab.TextLabel
-G2L["f"] = Instance.new("TextLabel", G2L["e"]);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundTransparency"] = 1;
-G2L["f"]["Size"] = UDim2.new(0, 51, 0, 15);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[lua.tab]];
-G2L["f"]["Position"] = UDim2.new(0, 0, 0.2, 0);
-
--- StarterGui.Executer.Frame.cLOSEGUI
-G2L["10"] = Instance.new("TextButton", G2L["2"]);
-G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["TextSize"] = 14;
-G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10"]["Size"] = UDim2.new(0, 29, 0, 23);
-G2L["10"]["Name"] = [[cLOSEGUI]];
-G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Text"] = [[X]];
-G2L["10"]["Position"] = UDim2.new(0.93373, 0, -0.06167, 0);
-
--- StarterGui.Executer.Frame.cLOSEGUI.Windows XP Error
-G2L["11"] = Instance.new("Sound", G2L["10"]);
-G2L["11"]["Name"] = [[Windows XP Error]];
-G2L["11"]["SoundId"] = [[rbxassetid://9066167010]];
-
--- StarterGui.Executer.Frame.Window666
-G2L["12"] = Instance.new("Frame", G2L["2"]);
-G2L["12"]["Visible"] = false;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 253, 209);
-G2L["12"]["Size"] = UDim2.new(0, 295, 0, 167);
-G2L["12"]["Position"] = UDim2.new(1.48958, 0, 0.38426, 0);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Name"] = [[Window666]];
-
--- StarterGui.Executer.Frame.Window666.UICorner
-G2L["13"] = Instance.new("UICorner", G2L["12"]);
-
-
--- StarterGui.Executer.Frame.Window666.Frame
-G2L["14"] = Instance.new("Frame", G2L["12"]);
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(6, 31, 190);
-G2L["14"]["Size"] = UDim2.new(0, 295, 0, 28);
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
--- StarterGui.Executer.Frame.Window666.Frame.UICorner
-G2L["15"] = Instance.new("UICorner", G2L["14"]);
-
-
--- StarterGui.Executer.Frame.Window666.Frame.TextLabel
-G2L["16"] = Instance.new("TextLabel", G2L["14"]);
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["TextSize"] = 14;
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["BackgroundTransparency"] = 1;
-G2L["16"]["Size"] = UDim2.new(0, 63, 0, 22);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[ERROR 666]];
-G2L["16"]["Position"] = UDim2.new(0.02034, 0, 0.10714, 0);
-
--- StarterGui.Executer.Frame.Window666.ImageLabel
-G2L["17"] = Instance.new("ImageLabel", G2L["12"]);
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["Image"] = [[rbxassetid://1847653031]];
-G2L["17"]["Size"] = UDim2.new(0, 54, 0, 51);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["BackgroundTransparency"] = 1;
-G2L["17"]["Position"] = UDim2.new(0.07797, 0, 0.23353, 0);
-
--- StarterGui.Executer.Frame.Window666.Frame
-G2L["18"] = Instance.new("Frame", G2L["12"]);
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(6, 31, 190);
-G2L["18"]["Size"] = UDim2.new(0, 6, 0, 148);
-G2L["18"]["Position"] = UDim2.new(0, 0, 0.11377, 0);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
--- StarterGui.Executer.Frame.Window666.Frame.UICorner
-G2L["19"] = Instance.new("UICorner", G2L["18"]);
-
-
--- StarterGui.Executer.Frame.Window666.Frame
-G2L["1a"] = Instance.new("Frame", G2L["12"]);
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(6, 31, 190);
-G2L["1a"]["Size"] = UDim2.new(0, 7, 0, 148);
-G2L["1a"]["Position"] = UDim2.new(0.97627, 0, 0.11377, 0);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
--- StarterGui.Executer.Frame.Window666.Frame.UICorner
-G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
-
-
--- StarterGui.Executer.Frame.Window666.Frame
-G2L["1c"] = Instance.new("Frame", G2L["12"]);
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(6, 31, 190);
-G2L["1c"]["Size"] = UDim2.new(0, 6, 0, 294);
-G2L["1c"]["Position"] = UDim2.new(0.49492, 0, 0.10778, 0);
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Rotation"] = -90;
-
--- StarterGui.Executer.Frame.Window666.Frame.UICorner
-G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
-
-
--- StarterGui.Executer.Frame.Window666.TextLabel
-G2L["1e"] = Instance.new("TextLabel", G2L["12"]);
-G2L["1e"]["BorderSizePixel"] = 0;
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["TextSize"] = 14;
-G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["BackgroundTransparency"] = 1;
-G2L["1e"]["Size"] = UDim2.new(0, 63, 0, 22);
-G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Text"] = [[Who are you running from?]];
-G2L["1e"]["Position"] = UDim2.new(0.43051, 0, 0.31801, 0);
-
--- StarterGui.Executer.Frame.Window666.ImageLabel
-G2L["1f"] = Instance.new("ImageLabel", G2L["12"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["Image"] = [[rbxassetid://12189348114]];
-G2L["1f"]["Size"] = UDim2.new(0, 89, 0, 29);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Position"] = UDim2.new(0.64407, 0, 0.76112, 0);
-
--- StarterGui.Executer.Frame.Window666.ImageLabel
-G2L["20"] = Instance.new("ImageLabel", G2L["12"]);
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["Image"] = [[rbxassetid://12189348114]];
-G2L["20"]["Size"] = UDim2.new(0, 98, 0, 29);
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Position"] = UDim2.new(0.26102, 0, 0.76112, 0);
-
--- StarterGui.Executer.Frame.Window666.LocalScript
-G2L["21"] = Instance.new("LocalScript", G2L["12"]);
-
-
--- StarterGui.Executer.Frame.Frame
-G2L["22"] = Instance.new("Frame", G2L["2"]);
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["22"]["Size"] = UDim2.new(0, 175, 0, 472);
-G2L["22"]["Position"] = UDim2.new(0.70902, 0, 0, 0);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
--- StarterGui.Executer.Frame.Frame.KD
-G2L["23"] = Instance.new("TextButton", G2L["22"]);
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["TextSize"] = 14;
-G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["23"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["23"]["Name"] = [[KD]];
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Text"] = [[FE Krystal Dance]];
-G2L["23"]["Position"] = UDim2.new(0.09554, 0, 0.02966, 0);
-
--- StarterGui.Executer.Frame.Frame.KD.LocalScript
-G2L["24"] = Instance.new("LocalScript", G2L["23"]);
-
-
--- StarterGui.Executer.Frame.Frame.FEGALE
-G2L["25"] = Instance.new("TextButton", G2L["22"]);
-G2L["25"]["BorderSizePixel"] = 0;
-G2L["25"]["TextSize"] = 14;
-G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["25"]["Name"] = [[FEGALE]];
-G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[FE gale fighter]];
-G2L["25"]["Position"] = UDim2.new(0.09554, 0, 0.11864, 0);
-
--- StarterGui.Executer.Frame.Frame.FEGALE.LocalScript
-G2L["26"] = Instance.new("LocalScript", G2L["25"]);
-
-
--- StarterGui.Executer.Frame.Frame.SAD
-G2L["27"] = Instance.new("TextButton", G2L["22"]);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextSize"] = 14;
-G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["27"]["Name"] = [[SAD]];
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[FE Sad Boy]];
-G2L["27"]["Position"] = UDim2.new(0.09554, 0, 0.20339, 0);
-
--- StarterGui.Executer.Frame.Frame.SAD.LocalScript
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
-
-
--- StarterGui.Executer.Frame.Frame.CHILL
-G2L["29"] = Instance.new("TextButton", G2L["22"]);
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["TextSize"] = 14;
-G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["29"]["Name"] = [[CHILL]];
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Text"] = [[FE chill script]];
-G2L["29"]["Position"] = UDim2.new(0.09554, 0, 0.2839, 0);
-
--- StarterGui.Executer.Frame.Frame.CHILL.LocalScript
-G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
-
-
--- StarterGui.Executer.Frame.Frame.TROLL
-G2L["2b"] = Instance.new("TextButton", G2L["22"]);
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["TextSize"] = 14;
-G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2b"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["2b"]["Name"] = [[TROLL]];
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[FE Troll Gui]];
-G2L["2b"]["Position"] = UDim2.new(0.09554, 0, 0.375, 0);
-
--- StarterGui.Executer.Frame.Frame.TROLL.LocalScript
-G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
-
-
--- StarterGui.Executer.Frame.Frame.Fun
-G2L["2d"] = Instance.new("TextButton", G2L["22"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["Size"] = UDim2.new(0, 148, 0, 29);
-G2L["2d"]["Name"] = [[Fun]];
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[Draw (NOT MY)]];
-G2L["2d"]["Position"] = UDim2.new(0.09554, 0, 0.4661, 0);
-
--- StarterGui.Executer.Frame.Frame.Fun.LocalScript
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
-
-
--- StarterGui.Executer.Frame.FakeOutput
-G2L["2f"] = Instance.new("Frame", G2L["2"]);
-G2L["2f"]["BorderSizePixel"] = 0;
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["Size"] = UDim2.new(0, 389, 0, 100);
-G2L["2f"]["Position"] = UDim2.new(0.0199, 0, 0.77021, 0);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Name"] = [[FakeOutput]];
-
--- StarterGui.Executer.Frame.FakeOutput.TextLabel
-G2L["30"] = Instance.new("TextLabel", G2L["2f"]);
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["30"]["TextSize"] = 14;
-G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["BackgroundTransparency"] = 1;
-G2L["30"]["Size"] = UDim2.new(0, 110, 0, 46);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[-- youtube.com/@EggenGoldenMen]];
-G2L["30"]["Position"] = UDim2.new(0.11421, 0, 0, 0);
-
--- StarterGui.Executer.Frame.FakeOutput.TextLabel
-G2L["31"] = Instance.new("TextLabel", G2L["2f"]);
-G2L["31"]["BorderSizePixel"] = 0;
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
-G2L["31"]["TextSize"] = 14;
-G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["BackgroundTransparency"] = 1;
-G2L["31"]["Size"] = UDim2.new(0, 127, 0, 46);
-G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Text"] = [[-- Youtube of my Friend ]];
-G2L["31"]["Position"] = UDim2.new(0.02002, 0, 0.18789, 0);
-
 -- StarterGui.Executer.LocalScript
-G2L["32"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
 
 
 -- StarterGui.Executer.ope
-G2L["33"] = Instance.new("Frame", G2L["1"]);
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["33"]["Position"] = UDim2.new(0, 0, 0.87469, 0);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Name"] = [[ope]];
-G2L["33"]["BackgroundTransparency"] = 1;
+G2L["3"] = Instance.new("Frame", G2L["1"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["3"]["Position"] = UDim2.new(0, 0, 0.87469, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[ope]];
+G2L["3"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.Executer.ope.OPEN
-G2L["34"] = Instance.new("ImageButton", G2L["33"]);
-G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["34"]["Image"] = [[rbxassetid://11163007697]];
-G2L["34"]["Size"] = UDim2.new(0, 54, 0, 56);
-G2L["34"]["BackgroundTransparency"] = 1;
-G2L["34"]["Name"] = [[OPEN]];
-G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Position"] = UDim2.new(0.38323, 0, 0.11776, 0);
+G2L["4"] = Instance.new("ImageButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["4"]["Image"] = [[http://www.roblox.com/asset/?id=18907244329]];
+G2L["4"]["Size"] = UDim2.new(0, 54, 0, 53);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Name"] = [[OPEN]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Position"] = UDim2.new(5.85323, 0, -6.87224, 0);
 
 -- StarterGui.Executer.ope.OPEN.UICorner
-G2L["35"] = Instance.new("UICorner", G2L["34"]);
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
 
 
--- StarterGui.Executer.LocalScript
-G2L["36"] = Instance.new("LocalScript", G2L["1"]);
+-- StarterGui.Executer.Frame
+G2L["6"] = Instance.new("Frame", G2L["1"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["6"]["Size"] = UDim2.new(0, 18, 0, 156);
+G2L["6"]["Position"] = UDim2.new(0.69595, 0, 0.0389, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
+-- StarterGui.Executer.Frame.Frame
+G2L["7"] = Instance.new("Frame", G2L["6"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+G2L["7"]["Size"] = UDim2.new(0, 432, 0, 353);
+G2L["7"]["Position"] = UDim2.new(0.93645, 0, 0.03913, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.Executer.Frame.Frame.KD
+G2L["8"] = Instance.new("TextButton", G2L["7"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 17;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["8"]["Name"] = [[KD]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[FE Krystal Dance]];
+G2L["8"]["Position"] = UDim2.new(0.3085, 0, 0.16847, 0);
+
+-- StarterGui.Executer.Frame.Frame.KD.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+-- StarterGui.Executer.Frame.Frame.KD.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["8"]);
+
+
+-- StarterGui.Executer.Frame.Frame.FEGALE
+G2L["b"] = Instance.new("TextButton", G2L["7"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 17;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["b"]["Name"] = [[FEGALE]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[FE gale fighter]];
+G2L["b"]["Position"] = UDim2.new(0.3085, 0, 0.29428, 0);
+
+-- StarterGui.Executer.Frame.Frame.FEGALE.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.Executer.Frame.Frame.FEGALE.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- StarterGui.Executer.Frame.Frame.SAD
+G2L["e"] = Instance.new("TextButton", G2L["7"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 17;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["e"]["Name"] = [[SAD]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[FE Sad Boy]];
+G2L["e"]["Position"] = UDim2.new(0.3085, 0, 0.41302, 0);
+
+-- StarterGui.Executer.Frame.Frame.SAD.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+-- StarterGui.Executer.Frame.Frame.SAD.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["e"]);
+
+
+-- StarterGui.Executer.Frame.Frame.CHILL
+G2L["11"] = Instance.new("TextButton", G2L["7"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 17;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["11"]["Name"] = [[CHILL]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[FE chill script]];
+G2L["11"]["Position"] = UDim2.new(0.3085, 0, 0.54169, 0);
+
+-- StarterGui.Executer.Frame.Frame.CHILL.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+-- StarterGui.Executer.Frame.Frame.CHILL.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["11"]);
+
+
+-- StarterGui.Executer.Frame.Frame.TROLL
+G2L["14"] = Instance.new("TextButton", G2L["7"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 17;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["14"]["Name"] = [[TROLL]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[FE Troll Gui]];
+G2L["14"]["Position"] = UDim2.new(0.3085, 0, 0.67528, 0);
+
+-- StarterGui.Executer.Frame.Frame.TROLL.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+-- StarterGui.Executer.Frame.Frame.TROLL.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["14"]);
+
+
+-- StarterGui.Executer.Frame.Frame.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["7"]);
+
+
+-- StarterGui.Executer.Frame.Frame.TextLabel
+G2L["18"] = Instance.new("TextLabel", G2L["7"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["TextSize"] = 19;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Size"] = UDim2.new(0, 200, 0, 26);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[Script Hub]];
+G2L["18"]["Position"] = UDim2.new(0.24769, 0, 0.03399, 0);
+
+-- StarterGui.Executer.Frame.Frame.LocalScript
+G2L["19"] = Instance.new("LocalScript", G2L["7"]);
+
+
+-- StarterGui.Executer.Frame.Frame.Fun
+G2L["1a"] = Instance.new("TextButton", G2L["7"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 17;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Fondamento.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["Size"] = UDim2.new(0, 148, 0, 29);
+G2L["1a"]["Name"] = [[Fun]];
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Draw (NOT MY)]];
+G2L["1a"]["Position"] = UDim2.new(0.3085, 0, 0.79188, 0);
+
+-- StarterGui.Executer.Frame.Frame.Fun.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+-- StarterGui.Executer.Frame.Frame.Fun.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["1a"]);
+
+
+-- StarterGui.Executer.Frame.Frame.Close
+G2L["1d"] = Instance.new("TextButton", G2L["7"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["ZIndex"] = 2;
+G2L["1d"]["Size"] = UDim2.new(0, 27, 0, 25);
+G2L["1d"]["Name"] = [[Close]];
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[X]];
+G2L["1d"]["Position"] = UDim2.new(0.93436, 0, 0, 0);
+
+-- StarterGui.Executer.Frame.Frame.Close.UICorner
+G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
+
+
+-- StarterGui.Executer.Frame.Frame.Close.CloseButtonSoundScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1d"]);
+G2L["1f"]["Name"] = [[CloseButtonSoundScript]];
+
+-- StarterGui.Executer.Frame.Frame.Close.CloseButtonSoundScript
+G2L["20"] = Instance.new("LocalScript", G2L["1d"]);
+G2L["20"]["Name"] = [[CloseButtonSoundScript]];
+
+-- StarterGui.Executer.Frame.Frame.Close.ImageLabel
+G2L["21"] = Instance.new("ImageLabel", G2L["1d"]);
+G2L["21"]["ZIndex"] = 100;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["Image"] = [[rbxassetid://14403807791]];
+G2L["21"]["Size"] = UDim2.new(64.2093, 0, 43.40424, 0);
+G2L["21"]["Visible"] = false;
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Position"] = UDim2.new(-56.53696, 0, -9.22859, 0);
+
+-- StarterGui.Executer.Frame.Frame
+G2L["22"] = Instance.new("Frame", G2L["6"]);
+G2L["22"]["ZIndex"] = 0;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["22"]["Size"] = UDim2.new(0, 432, 0, 362);
+G2L["22"]["Position"] = UDim2.new(0.96244, 0, 2.37731, 0);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.Executer.Frame.Frame.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["22"]);
+
+
+-- StarterGui.Executer.Frame.Frame
+G2L["24"] = Instance.new("Frame", G2L["6"]);
+G2L["24"]["ZIndex"] = 0;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Size"] = UDim2.new(0, 369, 0, 544);
+G2L["24"]["Position"] = UDim2.new(-14.88, 0, -5.11881, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Executer.Frame.Clear
+G2L["25"] = Instance.new("TextButton", G2L["6"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 25;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/IndieFlower.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["ZIndex"] = 0;
+G2L["25"]["Size"] = UDim2.new(0, 204, 0, 30);
+G2L["25"]["Name"] = [[Clear]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Clear]];
+G2L["25"]["Position"] = UDim2.new(1.91654, 0, 4.4586, 0);
+
+-- StarterGui.Executer.Frame.Clear.ClearTextScript
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+G2L["26"]["Name"] = [[ClearTextScript]];
+
+-- StarterGui.Executer.Frame.Clear.UICorner
+G2L["27"] = Instance.new("UICorner", G2L["25"]);
+
+
+-- StarterGui.Executer.Frame.EXE
+G2L["28"] = Instance.new("TextButton", G2L["6"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 25;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/IndieFlower.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["ZIndex"] = 0;
+G2L["28"]["Size"] = UDim2.new(0, 183, 0, 30);
+G2L["28"]["Name"] = [[EXE]];
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[Execute]];
+G2L["28"]["Position"] = UDim2.new(13.24687, 0, 4.4586, 0);
 
 -- StarterGui.Executer.Frame.EXE.ExecuteScript
-local function C_4()
-local script = G2L["4"];
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(script.Parent.Parent.ScriptHere.Text)()
-	end)
-end;
-task.spawn(C_4);
--- StarterGui.Executer.Frame.Clear.ClearTextScript
-local function C_6()
-local script = G2L["6"];
-	local button = script.Parent
-	local screenGui = button.Parent.Parent
-	local textBox = screenGui.Frame:FindFirstChild("ScriptHere")
-	
-	if textBox and textBox:IsA("TextBox") then
-	    button.MouseButton1Click:Connect(function()
-	        textBox.Text = ""
-	    end)
-	else
-	    warn("TextBox 'ScriptHere' not found or is not a TextBox instance.")
-	end
-end;
-task.spawn(C_6);
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+G2L["29"]["Name"] = [[ExecuteScript]];
+
+-- StarterGui.Executer.Frame.EXE.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["28"]);
+
+
+-- StarterGui.Executer.Frame.ScriptHere
+G2L["2b"] = Instance.new("TextBox", G2L["6"]);
+G2L["2b"]["CursorPosition"] = -1;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["ZIndex"] = 0;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextSize"] = 16;
+G2L["2b"]["Name"] = [[ScriptHere]];
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["PlaceholderText"] = [[By Steve_9092 And EggenGoldenMen]];
+G2L["2b"]["Size"] = UDim2.new(0, 388, 0, 291);
+G2L["2b"]["Position"] = UDim2.new(1.91654, 0, 2.51531, 0);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[]];
+
+-- StarterGui.Executer.Frame.ScriptHere.UIGradient
+G2L["2c"] = Instance.new("UIGradient", G2L["2b"]);
+G2L["2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.277, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.675, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.Executer.Frame.ScriptHere.UICorner
+G2L["2d"] = Instance.new("UICorner", G2L["2b"]);
+
+
 -- StarterGui.Executer.Frame.LocalScript
+G2L["2e"] = Instance.new("LocalScript", G2L["6"]);
+
+
+-- StarterGui.Executer.Frame.UICorner
+G2L["2f"] = Instance.new("UICorner", G2L["6"]);
+G2L["2f"]["CornerRadius"] = UDim.new(0, 10);
+
+-- StarterGui.Executer.LocalScript
+local function C_2()
+local script = G2L["2"];
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame")
+	local Button = SGui.ope:WaitForChild("OPEN")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+end;
+task.spawn(C_2);
+-- StarterGui.Executer.Frame.Frame.KD.LocalScript
 local function C_9()
 local script = G2L["9"];
-	local Frame = script.Parent
-	
-	Frame.Active = true 
-	Frame.Draggable = true
-end;
-task.spawn(C_9);
--- StarterGui.Executer.Frame.Window666.LocalScript
-local function C_21()
-local script = G2L["21"];
-	local Frame = script.Parent
-	
-	Frame.Active = true 
-	Frame.Draggable = true
-end;
-task.spawn(C_21);
--- StarterGui.Executer.Frame.Frame.KD.LocalScript
-local function C_24()
-local script = G2L["24"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local fake_transparency = 1
 	
@@ -1693,10 +1548,10 @@ local script = G2L["24"];
 	LoadAllAnimations()
 	end)
 end;
-task.spawn(C_24);
+task.spawn(C_9);
 -- StarterGui.Executer.Frame.Frame.FEGALE.LocalScript
-local function C_26()
-local script = G2L["26"];
+local function C_c()
+local script = G2L["c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		--[[
 	made by sammyc and loadlua
@@ -2646,7 +2501,7 @@ local script = G2L["26"];
 	local partCreatingFunction = Create'Part'
 	local part = partCreatingFunction()
 	]]
-
+	
 				--the Create function need to be created as a functor, not a function, in order to support the Create.E syntax, so it
 				--will be created in several steps rather than as a single function declaration.
 				local function Create_PrivImpl(objectType)
@@ -2660,14 +2515,14 @@ local script = G2L["26"];
 					return function(dat)
 						--default to nothing, to handle the no argument given case
 						dat = dat or {}
-
+	
 						--make the object to mutate
 						local obj = Instance.new(objectType)
 						local parent = nil
-
+	
 						--stored constructor function to be called after other initialization
 						local ctor = nil
-
+	
 						for k, v in pairs(dat) do
 							--add property
 							if type(k) == 'string' then
@@ -2678,16 +2533,16 @@ local script = G2L["26"];
 								else
 									obj[k] = v
 								end
-
-
+	
+	
 								--add child
 							elseif type(k) == 'number' then
 								if type(v) ~= 'userdata' then
 									error("Bad entry in Create body: Numeric keys must be paired with children, got a: "..type(v), 2)
 								end
 								v.Parent = obj
-
-
+	
+	
 								--event connect
 							elseif type(k) == 'table' and k.__eventname then
 								if type(v) ~= 'function' then
@@ -2695,8 +2550,8 @@ local script = G2L["26"];
 	got: "..tostring(v), 2)
 								end
 								obj[k.__eventname]:connect(v)
-
-
+	
+	
 								--define constructor function
 							elseif k == t.Create then
 								if type(v) ~= 'function' then
@@ -2707,41 +2562,41 @@ local script = G2L["26"];
 									error("Bad entry in Create body: Only one constructor function is allowed", 2)
 								end
 								ctor = v
-
-
+	
+	
 							else
 								error("Bad entry ("..tostring(k).." => "..tostring(v)..") in Create body", 2)
 							end
 						end
-
+	
 						--apply constructor function if it exists
 						if ctor then
 							ctor(obj)
 						end
-
+	
 						if parent then
 							obj.Parent = parent
 						end
-
+	
 						--return the completed object
 						return obj
 					end
 				end
-
+	
 				--now, create the functor:
 				t.Create = setmetatable({}, {__call = function(tb, ...) return Create_PrivImpl(...) end})
-
+	
 				--and create the "Event.E" syntax stub. Really it's just a stub to construct a table which our Create
 				--function can recognize as special.
 				t.Create.E = function(eventName)
 					return {__eventname = eventName}
 				end
-
+	
 				-------------------------------------------------Create function End----------------------------------------------------
-
-
-
-
+	
+	
+	
+	
 				------------------------------------------------------------------------------------------------------------------------
 				------------------------------------------------------------------------------------------------------------------------
 				------------------------------------------------------------------------------------------------------------------------
@@ -2749,7 +2604,7 @@ local script = G2L["26"];
 				------------------------------------------------------------------------------------------------------------------------
 				------------------------------------------------------------------------------------------------------------------------
 				------------------------------------------------------------------------------------------------------------------------
-
+	
 				t.Help =
 					function(funcNameOrFunc)
 						--input argument can be a string or a function. Should return a description (of arguments and expected side effects)
@@ -5383,10 +5238,10 @@ local script = G2L["26"];
 	end)
 
 end;
-task.spawn(C_26);
+task.spawn(C_c);
 -- StarterGui.Executer.Frame.Frame.SAD.LocalScript
-local function C_28()
-	local script = G2L["28"];
+local function C_f()
+	local script = G2L["f"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local clone_transparency = 1 --Set Value How you want to fake body be transparenty.
 
@@ -6669,10 +6524,10 @@ local function C_28()
 	end)
 
 end;
-task.spawn(C_28);
+task.spawn(C_f);
 -- StarterGui.Executer.Frame.Frame.CHILL.LocalScript
-local function C_2a()
-	local script = G2L["2a"];
+local function C_12()
+	local script = G2L["12"];
 	script.Parent.MouseButton1Click:Connect(function()
 		-- SCRIPT NOT BY SPACE NOOB im just showcase scripts...
 		-- IDK What creator of the script
@@ -7650,20 +7505,29 @@ local function C_2a()
 	end)
 
 end;
-task.spawn(C_2a);
+task.spawn(C_12);
 -- StarterGui.Executer.Frame.Frame.TROLL.LocalScript
-local function C_2c()
-	local script = G2L["2c"];
+local function C_15()
+	local script = G2L["15"];
 	script.Parent.MouseButton1Click:Connect(function()
 		getgenv().ActivateTheUltimateTrolly = true
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Orealated/Oreal/main/orealated%20Easy.gg%20UTH%20Loader", true))();
 	end)
 
 end;
-task.spawn(C_2c);
+task.spawn(C_15);
+-- StarterGui.Executer.Frame.Frame.LocalScript
+local function C_19()
+	local script = G2L["19"];
+	local Frame = script.Parent
+
+	Frame.Active = true 
+	Frame.Draggable = true
+end;
+task.spawn(C_19);
 -- StarterGui.Executer.Frame.Frame.Fun.LocalScript
-local function C_2e()
-	local script = G2L["2e"];
+local function C_1b()
+	local script = G2L["1b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		--[=[
 	 d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
@@ -8288,32 +8152,83 @@ local function C_2e()
 	end)
 
 end;
+task.spawn(C_1b);
+-- StarterGui.Executer.Frame.Frame.Close.CloseButtonSoundScript
+local function C_1f()
+	local script = G2L["1f"];
+	-- CloseButtonSoundScript
+	-- This script plays a sound when the "Close" button is pressed
+
+	-- Ensure the script is attached to the "Close" button
+	local closeButton = script.Parent
+	if not closeButton:IsA("TextButton") then
+		warn("Script is not attached to a TextButton")
+		return
+	end
+
+	-- Create a sound instance
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://5567523008"
+	sound.Parent = closeButton
+
+	-- Function to play the sound when the button is clicked
+	local function onCloseButtonClicked()
+		sound:Play()
+	end
+
+	-- Connect the function to the button's MouseButton1Click event
+	closeButton.MouseButton1Click:Connect(onCloseButtonClicked)
+end;
+task.spawn(C_1f);
+-- StarterGui.Executer.Frame.Frame.Close.CloseButtonSoundScript
+local function C_20()
+	local script = G2L["20"];
+	local button = script.Parent
+	local imageLabel = button:FindFirstChild("ImageLabel")
+
+	if imageLabel then
+		button.MouseButton1Click:Connect(function()
+			imageLabel.Visible = true
+			task.wait(5)
+			imageLabel.Visible = false
+		end)
+	else
+		warn("ImageLabel not found in the parent frame.")
+	end
+end;
+task.spawn(C_20);
+-- StarterGui.Executer.Frame.Clear.ClearTextScript
+local function C_26()
+	local script = G2L["26"];
+	local button = script.Parent
+	local screenGui = button.Parent.Parent
+	local textBox = screenGui.Frame:FindFirstChild("ScriptHere")
+
+	if textBox and textBox:IsA("TextBox") then
+		button.MouseButton1Click:Connect(function()
+			textBox.Text = ""
+		end)
+	else
+		warn("TextBox 'ScriptHere' not found or is not a TextBox instance.")
+	end
+end;
+task.spawn(C_26);
+-- StarterGui.Executer.Frame.EXE.ExecuteScript
+local function C_29()
+	local script = G2L["29"];
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.ScriptHere.Text)()
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.Executer.Frame.LocalScript
+local function C_2e()
+	local script = G2L["2e"];
+	local Frame = script.Parent
+
+	Frame.Active = true 
+	Frame.Draggable = true
+end;
 task.spawn(C_2e);
--- StarterGui.Executer.LocalScript
-local function C_32()
-	local script = G2L["32"];
-	local SGui = script.Parent
-	local Frame = SGui:WaitForChild("Frame")
-	local Button = SGui.ope:WaitForChild("OPEN")
-
-	Button.MouseButton1Up:Connect(function()
-		Frame.Visible = not Frame.Visible
-	end)
-
-end;
-task.spawn(C_32);
--- StarterGui.Executer.LocalScript
-local function C_36()
-	local script = G2L["36"];
-	local SGui = script.Parent
-	local Frame = SGui.Frame:WaitForChild("Window666")
-	local Button = SGui.Frame:WaitForChild("cLOSEGUI")
-
-	Button.MouseButton1Up:Connect(function()
-		Frame.Visible = not Frame.Visible
-	end)
-
-end;
-task.spawn(C_36);
 
 return G2L["1"], require;
